@@ -43,7 +43,7 @@ let arr = [
 
 let falseArr = [
     "IPv4 network addresses use of merge the characteristics and uses of the unicast",            
-    "Binary numbering system consists of the numbers 0 and  called byt",
+    "Binary numbering system consists of the numbers 0 and 1 called byt",
     "Local Area Network (LAN) – spans a large geographic area owned or operated by an individual or IT department",  
     "Each one of the router’s physical interfaces is connected to a multiple VLAN",            
     "Legacy inter-VLAN routing requires routers to have unique physical interfaces",  
