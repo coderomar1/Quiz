@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<style>
+    button{
+        position: relative;
+        width: 100%;
+
+    }
+</style>
+<body>
+    <script>
+            for(let i = arr;i< i < arr.length;i++){
+                const random = arr.splice(Math.floor(Math.random() * (arr.length)),1);
+                document.write("<form>");
+                    document.write(`<textarea rows="4" cols="50">${random}</textarea><br>`);
+                    document.write(`<h2></h2>`);
+                    document.write(`<input id="radio" style="color:green;" type="radio" name="tf" value="T" ><label>صح</label><br>`);
+                    document.write(`<input  id="radio"  style="color:red;" type="radio" name="tf" value="F"><label>خطأ</label>`);
+                document.write("</form><br>");
+            };
+    </script>
+        <button id="btn">حفظ</button>
+        <script>
+                const form = document.getElementsByTagName("form");
+                const btn = document.getElementById("btn");
+                 btn.onclick = ()=>{
+                    for(let f of form){
+                        const q = f.getElementsByTagName("textarea")[0].value;
+                        const radio = f.getElementsByTagName("input");
+                        for(let r of radio){
+                        if(r.checked){
+                                if(r.value == "F" && falseArr.includes(q)){
+                                    f.getElementsByTagName("h2")[0].textContent = "اجابة صحيحة";
+                                    f.getElementsByTagName("h2")[0].style.color = "green"
+                                }else if(r.value == "T" && !falseArr.includes(q)){
+                                    f.getElementsByTagName("h2")[0].textContent = "اجابة صحيحة";
+                                    f.getElementsByTagName("h2")[0].style.color = "green"
+                                }else{
+                                    f.getElementsByTagName("h2")[0].textContent = "اجابة خاطئة";
+                                    f.getElementsByTagName("h2")[0].style.color = "red";
+                                }
+                           
+                        }
+                    }
+                    }
+                 }
+        </script>
+</body>
+</html>
