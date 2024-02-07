@@ -38,7 +38,6 @@
                         const q = f.getElementsByTagName("textarea")[0].value;
                         const radio = f.getElementsByTagName("input");
                         const h2 = f.getElementsByTagName("h2")[0];                        
-
                         for(let r of radio){
                         if(r.checked){
                                 if(r.value == "F" && falseArr.includes(q)){
@@ -53,18 +52,14 @@
                                     h2.textContent = "اجابة خاطئة";
                                     h2.style.color = "red";
                                     hr.red.push(h2);
-                                    
-                                }
-                                
-                               
-                               
+                                }    
                         }
                   
                     }
                     
                     }
-                    
-                    alert((hr.green.length + hr.red.length )+ " / " + hr.green.length);
+                    // if(arr.length !== (hr.green.length + hr.red.length )) alert("اجب على كل الأسئلة");
+                     alert((hr.green.length + hr.red.length )+ " / " + hr.green.length);
                  }
         </script>
 </body>
