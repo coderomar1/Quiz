@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Quiz</title>
+    <title>DB Quiz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="qustions.js"></script>
@@ -22,12 +22,17 @@
                 document.write("<form class='container mt-5' >");
                     document.write(`<textarea class="form-control" rows="4" cols="50" id="${i}"  readonly>${random[0].q}</textarea><br>`);
                     document.write(`<h2></h2>`);
-                if(name == "Choices"){
+                if(name != "TrueAndFalse"){
                     const ansr = [random[0].c1,random[0].c2,random[0].c3,random[0].c4];
                     for(let i = ansr;i<i<ansr.length;i++){
                         const ranAnsr = ansr.splice(Math.floor(Math.random() * (ansr.length)),1);
-                        document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : "F"}">
-                        <label class="form-check-label">${ranAnsr}</label><br>`);
+                        if(name == "Selection"){
+                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
+                            <label class="form-check-label">${ranAnsr}</label><br>`);
+                        }else{
+                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : "F"}">
+                            <label class="form-check-label">${ranAnsr}</label><br>`);
+                        } 
                     }
                 }else{
                     document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${random[0].c ? "T" : "F"}">
@@ -52,11 +57,8 @@
                         const h2 = f.getElementsByTagName("h2")[0];                        
                         for(let r of radio){
                         if(r.checked){
-                               /* if(r.value == "F" && falseArr.includes(q)){
-                                    h2.textContent = "اجابة صحيحة";
-                                    h2.style.color = "green"
-                                    hr.green.push(h2);
-                                }else */
+                                // if(r.type == "checkbox") console.log(f.nodeType)
+                                
                                  if(r.value == "T" ){
                                     h2.textContent = "اجابة صحيحة";
                                     h2.style.color = "green"
