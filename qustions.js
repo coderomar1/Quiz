@@ -32,7 +32,6 @@ class Selection extends Questions {
 
 const arr = [
  // Mid
-  new TrueAndFalse("Data can be processed"/* quirstion*/,true),
   new TrueAndFalse("you are a student. it is example about an information"/* quirstion*/,true),
   new TrueAndFalse("We can make a decision based on some information"/* quirstion*/,true),
   new TrueAndFalse("We can make a decision based on enough data"/* quirstion*/,false),
