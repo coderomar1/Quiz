@@ -30,7 +30,7 @@
                             document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
                             <label class="form-check-label">${ranAnsr}</label><br>`);
                         }else{
-                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : "F"}">
+                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : ranAnsr == random[0].c3 ? "T" : "F"}">
                             <label class="form-check-label">${ranAnsr}</label><br>`);
                         } 
                     }
