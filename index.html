@@ -26,13 +26,13 @@
                     const ansr = [random[0].c1,random[0].c2,random[0].c3,random[0].c4];
                     for(let i = ansr;i<i<ansr.length;i++){
                         const ranAnsr = ansr.splice(Math.floor(Math.random() * (ansr.length)),1);
-                        if(name == "Selection"){
-                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
+                       // if(name == "Selection"){
+                         //   document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
+                           // <label class="form-check-label">${ranAnsr}</label><br>`);
+                        //}else{
+                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" :"F"}">
                             <label class="form-check-label">${ranAnsr}</label><br>`);
-                        }else{
-                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : ranAnsr == random[0].c3 ? "T" : "F"}">
-                            <label class="form-check-label">${ranAnsr}</label><br>`);
-                        } 
+                        //} 
                     }
                 }else{
                     document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${random[0].c ? "T" : "F"}">
