@@ -36,7 +36,7 @@ const arr = [
     new TrueAndFalse("Sprints are usually long time normally",false),
     new Choices("which one is not a correct Agile Principles","Team usually meets daily","Build projects around motivated individuals","Project architectures, requirements, and designs can change over the project timeline","The art of minimize the amount of work not done"),
     new Choices("Which of the following frameworks is best for early project delivery","They are all on the same level","Crystal Method","XP","Scrum"),
-    new Choices("On scrum, we are starting from","Sprint backlog","Sprint backlog","Time","Sprint goal","Product backlog"),
+    new Choices("On scrum, we are starting from","Sprint backlog","Time","Sprint goal","Product backlog"),
     new TrueAndFalse("Agile is a Silver Bullet",true),
     new Choices("The most important part of the steps of Agile methodology is","Sprint backlog","Sprint goal","product backlog","Sprint"),
     new Choices("The next step after Sprint is","sprint backlog","time","sprint goal","product increment"),
