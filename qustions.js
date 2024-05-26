@@ -31,6 +31,19 @@ class Selection extends Questions {
 }
 
 const arr = [
+    // String
+    new Choices("This is the first index in a string.","−1"," 1"," The size of the string minus one"," 0"),
+    new Choices("This is the last index in a string."," 1"," 99"," 0"," The size of the string minus one"),
+    new Choices("This will happen if you try to use an index that is out of range for a string."," A ValueError exception will occur"," The string will be erased and the program will continue to run"," Nothing—the invalid index will be ignored"," An IndexError exception will occur"),
+    new Choices("This function returns the length of a string."," length"," size"," lengthof"," len"),
+    new Choices("This operator determines whether one string is contained inside another string."," contains"," is_in"," =="," in"),
+    new Choices(" This string method returns true if a string contains only alphabetic characters and is at least one character in length."," the alpha method"," the alphabetic method"," the isletters method"," the isalpha method"),
+    new Choices(". This string method returns true if a string contains only numeric digits and is at least one character in length."," the digit method"," the numeric method"," the isnumber method"," the isdigit method"),
+    new TrueAndFalse(" Once a string is created, it cannot be changed",true),
+    new TrueAndFalse(". You can use the for loop to iterate over the individual characters in a string",true),
+    new TrueAndFalse("The isupper method converts a string to all uppercase characters",false),
+    new TrueAndFalse("The repetition operator (*) works with strings as well as with lists",true),
+    new TrueAndFalse("When you call a string’s split method, the method divides the string into two substrings",false),
     // dict and set 
     new Choices("You can use the _________ operator to determine whether a key exists in a dictionary." ,"&"  ,"ˆ" ,"?","in"),
     new Choices("You use _________ to delete an element from a dictionary." ,"the remove method" ,"the erase method" ,"the delete method" ,"the del statement"),
