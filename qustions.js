@@ -61,7 +61,7 @@ const arr = [
     new Choices("Creating a smooth edge by blending the color of the text with the color of the background is called","Jaggies","pixels","pattern","anti-aliasing"),
     new Choices("list of instructions that can be carried out by the computer","Operating system","Software","Application","Program"),
     new Choices("The density of pixels per inch","Color resolution","Dimensions","Color scheme","Spatial resolution"),
-    new Choices(". A method that converts and executes one line of code at a time","Assembly language","Compiler","Machine code","Interpreter"),
+    new Choices(" A method that converts and executes one line of code at a time","Assembly language","Compiler","Machine code","Interpreter"),
     new Choices("A collection of computer programs that govern the operation of a computer","Application","Programming languages","Program","Software"),
     new Choices("The spacing between specific letters is called","Leading","Tracking","Alignment","Kerning"),
     new Choices("The spacing between lines","Tracking","Kerning","Alignment","Leading"),
