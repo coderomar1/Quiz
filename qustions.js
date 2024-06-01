@@ -34,6 +34,8 @@ const arr = [
     new Choices("Number of bits used to represent digital sample is called:" /*<- question */," Sample Rate"," Sample formats"," Sample sound"," Sample Resolution"),
     new Choices("It is data made useful, interpreted, and applied to produce understanding"/*<- question */," Symbols"," Data "," Digital files"," Information"),
     new Choices(" A type of storage that holds data and instructions outside the system unit for long periods of time" /*<- question */," Hard drive storage"," Optical storage"," Magnetic storage"," Secondary storage"),
+    new Choices("The process of specifying the shape of the 3-D object.","Rendering","Surface definition","Scene composition","Modeling"),
+    new Choices("Programs designed to facilitate the creation of multimedia products.","Media utilities","Video applications","Media-specific application","Authoring software"),
     new TrueAndFalse(" Series of letters to designate the file format"/*<- question */,true),
     new TrueAndFalse(" Ability to use the file in a different platform of hardware and software"/*<- question */,true),
     new TrueAndFalse("Information is the givens of experience such as, measurements, facts, observations"/*<- question */,false),
