@@ -46,7 +46,7 @@ const arr = [
     new TrueAndFalse(" Digital encoding assigns bits to data items"/*<- question */,true),
     new TrueAndFalse("Codec is a program to compress a file into a smaller size and decompress it into a usable form"/*<- question */,true),
     new TrueAndFalse("Contemporary Multimedia is the development, integration, and delivery of any combination of text, graphics, animation, sound or video through a computer or other electronic means"/*<- question */,true),
-    new TrueAndFalse("the best compression strategy best suited for an important database of student names and addresses is lossy",true),
+    new TrueAndFalse("the best compression strategy best suited for an important database of student names and addresses is lossy",false),
     new TrueAndFalse("Interactive multimedia enhances learning, memory & retention by 15 percent",false),
     new TrueAndFalse("Laser printer is an example of impact printers",false),
     new TrueAndFalse(`Ports that are powered through the interface port and that means no more "wall warts"`,true),
@@ -69,6 +69,9 @@ const arr = [
     new Choices("A method that converts entire program to an executable file","Machine code","Interpreter","Assembly language","Compiler"),
     new Choices("Characters that do not have any decoration","Script Typefaces","Symbol Typefaces","Serif Typefaces","Sans Serif Typefaces"),
     new Choices("It is a binary code the processor directly executes","Compiler","Interpreter","Assembly language","Machine code"),
+    new Choices("In which step of creating 3D graphics, objects are arranged, backgrounds introduced,Environmental effects added and lighting established effects added, and lighting establish.","Rendering","Surface definition","Modeling","Scene Composition"),
+    new Choices("software that analyzes a bitmapped image for shapes and converts the image to a vector graphic.","Dithering","Indexing","Rasterizing","Autotracing"),
+    new Choices("Series of letters to designate the file format","File size","Program files","Digital files","File extensions"),
     new TrueAndFalse("Programs designed to facilitate the creation of multimedia products is Authoring Software",true),
     new TrueAndFalse("High-Level Languages contain more English-like commands",true),
     new TrueAndFalse("Vector graphics can be used with different devices without altering the image dimension",true),
@@ -80,8 +83,11 @@ const arr = [
     new TrueAndFalse("ppi is a unit used to measure spatial resolution of print output",false),
     new TrueAndFalse("Assembly language is a high-level programming language that includes text abbreviations for binary commands",false),
     new TrueAndFalse("Bitmapped images can be enlarged without distortion",false),
-    new TrueAndFalse("One of the advantage of vector graphics (images) the small sizes",false),
+    new TrueAndFalse("One of the advantage of vector graphics (images) the small sizes",true),
     new TrueAndFalse("Object-Oriented languages includes self contained programmed objects are reused in an application",true),
+    new TrueAndFalse("Outline fonts store a description of the character to be displayed, such as Adobe Postscript",true),
+    new TrueAndFalse("High color resolution may cause quantization and color banding",false),
+    new TrueAndFalse("In 3D graphics real-time renderingis used for highly interactive 3-D applications such as video games.",true),
 ];
 
 
