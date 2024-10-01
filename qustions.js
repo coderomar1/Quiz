@@ -46,7 +46,15 @@ const arr = [
     new TrueAndFalse("Children have the same expectations as adults about how they want to learn or use a system?",false),
     new Choices("A good measurement is not to place delete/quit next to save command on a menu. This point is considered an example of which of the following usability goals?"/* <--Question */,"Effiectiveness","Learnability","Utility","Safety"),
     new TrueAndFalse("Design principles are generalizable abstractions intended to orient designers toward thinking about different aspects of their designs?",true),
-    new TrueAndFalse("Learning more about people and what they do can reveal incorrect assumptions that designers may have about particular user groups and what they need?",true)
+    new TrueAndFalse("Learning more about people and what they do can reveal incorrect assumptions that designers may have about particular user groups and what they need?",true),
+    new Choices("The principle of making it clear to the user what action has been taken and what has been accomplished"/* <--Question */,"Affordance","Consistency","Constraints","Feedback"),
+    new TrueAndFalse("Dix's s Hierarchy of User Interfaces includes five layers (levels)",false),
+    new TrueAndFalse("UX aspects includes subjective qualities and focuses on assessing how useful or productive a system is",false),
+    new Choices("Limiting the range of interaction possibilities for the user to simplify the interface and guide the user to the appropriate next action"/* <--Question */,"Feedback","Consistency","Affordance","Constraints"),
+    new TrueAndFalse("Usability refers to ensuring that interactive products are easy to learn,effective to use, and enjoyable from the user's perspective",true),
+    new Choices("It refers to the way a design supports users in carrying out their tasks."/* <--Question */,"Safety","Effectiveness","Learnability","Efficiency"),
+    new Choices("It is an object attribute that allows the user to understand how to use it such as buttons that gives a clue that they can be pushed or clicked"/* <--Question */,"Feedback","Feedback","Consistency","Affordance")
+    
 ];
 
 
