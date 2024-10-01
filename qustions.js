@@ -35,7 +35,7 @@ const arr = [
     new TrueAndFalse("Emotions does not effect the business?",false),
     new TrueAndFalse("One of the reasons that makes UX design important is that many actual products have become services that could be easily changed?",true),
     new TrueAndFalse("Understanding people plays a good rule in learning how to design interactive products that provide good UX or match a user's needs?",true),
-    new Choices("Designing functions that invite action and are easily understood is related to which design principle?"/* <--Question */,"Feedback ","Constraints","Consistency","Visibilit"),
+    new Choices("Designing functions that invite action and are easily understood is related to which design principle?"/* <--Question */,"Feedback ","Constraints","Consistency","Visibility"),
     new Choices("It refers to how easy a product is to remember how to use, once learned?"/* <--Question */,"Efficiency","Effiectiveness","Learnability","Memorability"),
     new Choices("One-off actions that can be performed infrequently or several times a day which the user never tires of doing?","User actions","Clues","User interactions","Micro-Interaction"),
     new TrueAndFalse("In e-commerce websites, adding items to the user’s basket without informing the user is considered a good usability technique as the user can de-select the items at the check out page?",false),
