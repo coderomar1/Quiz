@@ -53,7 +53,17 @@ const arr = [
     new Choices("Limiting the range of interaction possibilities for the user to simplify the interface and guide the user to the appropriate next action"/* <--Question */,"Feedback","Consistency","Affordance","Constraints"),
     new TrueAndFalse("Usability refers to ensuring that interactive products are easy to learn,effective to use, and enjoyable from the user's perspective",true),
     new Choices("It refers to the way a design supports users in carrying out their tasks."/* <--Question */,"Safety","Effectiveness","Learnability","Efficiency"),
-    new Choices("It is an object attribute that allows the user to understand how to use it such as buttons that gives a clue that they can be pushed or clicked"/* <--Question */,"Feedback","Feedback","Consistency","Affordance")
+    new Choices("It is an object attribute that allows the user to understand how to use it such as buttons that gives a clue that they can be pushed or clicked"/* <--Question */,"Feedback","Feedback","Consistency","Affordance"),
+    
+    new Choices(" The object attribute that allows the user to understand the how to use it such as the scroll bar which indicates that can be scrolled up and down","Feedback","Consistency","Affordance"),
+    new TrueAndFalse("He user-entered approaches take the user's feedback at the beginning of the design process only",false),
+    new TrueAndFalse("satisfaction was not included in early usability standards (1998)-ISO9241",false),
+    new TrueAndFalse("cultural differences is not important for products intended for a diverse range of user groups from different countries",false),
+    new TrueAndFalse("cultural differences is also an important particularly for products intended for a diverse range of user groups from different countries",true),
+    new TrueAndFalse("Emotions does not effect the business",false),
+    new Choices("it refers how to good a design is at doing what it is supposed to do","Safety","Learnability","Utility","Effectiveness"),
+    new TrueAndFalse("involving users in the design process minimizes change resistance and rejection",true),
+    new TrueAndFalse("the fact that many actual products have become services that cloud be easily changed is considered a driver of the increasing importance of UX design",true)
 ];
 
 
