@@ -28,6 +28,7 @@ class Selection extends Questions {
         this.c3 = c3;
         this.c4 = c4;
     }
+ 
 }
 
 const arr = [
@@ -47,8 +48,13 @@ new Choices(" Developers can use Template options in which of the following ways
 new Choices(" I want to hide a few columns in my interactive report. To do so, which option should I choose from the Actions menu?"/*<-- Q */ , "Filter"  , "Data"  , "Format", "Columns"),
 new Choices(" Which are Task definitions that exist on the application level in the Shared Components section made up of? "/*<-- Q */," Participants "," Task Settings ",/*" Parameters ",*/" Action"," All of them "),
 new Choices("Which component in SQL workshop allows you to build queries graphically without manual SQL coding  "/*<-- Q */," Quick SQL "," SQL commands "," Data Workshop "," Query Builder "),
-new Choices(""),
-new Choices(""),
+// Selection
+new Selection(" Which two of the following capabilities are true for both Interactive Report and Interactive Grid? "/*<-- Q */," End user can rearrange the report interactively using the mouse "," End user can save the report "," End user can customize how and what data is displayed"," End user can add, modify, and refresh data directly on the report  "),
+new Selection("Which two statements are true about creating and using an interactive report? "/*<-- Q */," You cannot include Form Page when creating an interactive report page using the Create Page Wizard. "," You cannot restrict users form saving private reports by using Authorization scheme "," You can specify an authorization scheme at the column level "," You cannot customize Search Button Label "),
+new Selection(" In a Classic report, an end user can perform which two of the following actions? "/*<-- Q */,"Create Control Breaks in the report ","Rearrange the columns in the report ","Filter values of a column in the report ","Sort the columns of the report "),
+new Selection(" Which two are true about Oracle APEX? "/*<-- Q */,"Performs the data processing in a middle-tier server "," Requires developers to be proficient in Java, Python and other programming language. "," Is declarative. It requires no code generation "," Requires no additional e=client software. A web browser is the app development IDE "),
+new Selection("From SQL Workshop, you can perform which two of the following actions? "/*<-- Q */,"Create an APEX user ","Delete database ","Create and view database objects","Run SQL commands and scripts "),
+
 ];
 
 
