@@ -16,18 +16,20 @@
 </style>
 <body>
     <script>
+            let qnum = 0;
             for(let i = arr;i< i < arr.length;i++){
+                qnum++;
                 const random = arr.splice(Math.floor(Math.random() * (arr.length)),1);
                 const name = random[0].constructor.name;
                 document.write("<form class='container mt-5' >");
-                    document.write(`<textarea class="form-control" rows="4" cols="50" id="${i}"  readonly>${random[0].q}</textarea><br>`);
+                    document.write(`<textarea class="form-control" rows="4" cols="50" id="${i}"  readonly>${qnum}-${random[0].q}</textarea><br>`);
                     document.write(`<h2></h2>`);
                 if(name != "TrueAndFalse"){
                     const ansr = [random[0].c1,random[0].c2,random[0].c3,random[0].c4];
                     for(let i = ansr;i<i<ansr.length;i++){
                         const ranAnsr = ansr.splice(Math.floor(Math.random() * (ansr.length)),1);
                         if(name == "Selection"){
-                                document.write(`<input  class="form-check-input" id="${i}"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
+                                document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
                                 <label class="form-check-label">${ranAnsr}</label><br>`);
                         }else{
                             document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : "F"}">
