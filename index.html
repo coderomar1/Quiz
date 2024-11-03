@@ -22,7 +22,7 @@
                 const random = arr.splice(Math.floor(Math.random() * (arr.length)),1);
                 const name = random[0].constructor.name;
                 document.write("<form class='container mt-5' >");
-                    document.write(`<textarea class="form-control" rows="4" cols="50" id="${i}"  readonly>${qnum}-${random[0].q}</textarea><br>`);
+                    document.write(`<textarea class="form-control" rows="4" cols="50" id="${qnum}"  readonly>${qnum}-${random[0].q}</textarea><br>`);
                     document.write(`<h2></h2>`);
                 if(name != "TrueAndFalse"){
                     const ansr = [random[0].c1,random[0].c2,random[0].c3,random[0].c4];
