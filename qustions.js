@@ -57,7 +57,6 @@ new Selection("Which two statements are true about creating and using an interac
 new Selection(" In a Classic report, an end user can perform which two of the following actions? "/*<-- Q */,"Create Control Breaks in the report ","Rearrange the columns in the report ","Filter values of a column in the report ","Sort the columns of the report "),
 new Selection(" Which two are true about Oracle APEX? "/*<-- Q */,"Performs the data processing in a middle-tier server "," Requires developers to be proficient in Java, Python and other programming language. "," Is declarative. It requires no code generation "," Requires no additional e=client software. A web browser is the app development IDE "),
 new Selection("From SQL Workshop, you can perform which two of the following actions? "/*<-- Q */,"Create an APEX user ","Delete database ","Create and view database objects","Run SQL commands and scripts "),
-
 ];
 
 

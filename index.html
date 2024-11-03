@@ -27,8 +27,8 @@
                     for(let i = ansr;i<i<ansr.length;i++){
                         const ranAnsr = ansr.splice(Math.floor(Math.random() * (ansr.length)),1);
                         if(name == "Selection"){
-                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
-                            <label class="form-check-label">${ranAnsr}</label><br>`);
+                                document.write(`<input  class="form-check-input" id="${i}"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
+                                <label class="form-check-label">${ranAnsr}</label><br>`);
                         }else{
                             document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : "F"}">
                             <label class="form-check-label">${ranAnsr}</label><br>`);
@@ -53,14 +53,36 @@
                  btn.onclick = ()=>{
                     var hr = {green:[],red:[]};
                     for(let f of form){
-                        const q = f.getElementsByTagName("textarea")[0].value;
+                        const q = f.getElementsByTagName("textarea")[0];
                         const radio = f.getElementsByTagName("input");
                         const h2 = f.getElementsByTagName("h2")[0];                        
                         for(let r of radio){
                         if(r.checked){
-                                // if(r.type == "checkbox") console.log(f.nodeType)
-                                
-                                 if(r.value == "T" ){
+                            if(r.type == "checkbox"){
+                               
+                               if(r.value == "T" && r.parentElement == q.parentElement){
+                                   let elmCheckBoxes = r.parentElement.getElementsByTagName("input");
+                                   let elmTrue = [];
+                                   let elmFalse = [];
+                                   for(let e of elmCheckBoxes){
+                                        if(e.value == "T" && e.checked) elmTrue.push(e);
+                                        else elmFalse.push(e);
+                                   }
+                                //    console.log(typeof elmTrue.length)
+                                  for(let e of elmFalse){
+                                    if(elmTrue.length == 2&& !e.checked){
+                                        h2.textContent = "اجابة صحيحة";
+                                        h2.style.color = "green"
+                                        hr.green.push(h2);
+                                   }
+                                  }
+                               }else{
+                                    h2.textContent = "اجابة خاطئة";
+                                    h2.style.color = "red";
+                                    hr.red.push(h2);
+                               }  
+                            }else{
+                                if(r.value == "T" ){
                                     h2.textContent = "اجابة صحيحة";
                                     h2.style.color = "green"
                                     hr.green.push(h2);
@@ -69,8 +91,8 @@
                                     h2.style.color = "red";
                                     hr.red.push(h2);
                                 }    
-                        }
-                  
+                            }      
+                        } 
                     }
                     
                     }
