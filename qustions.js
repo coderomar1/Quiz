@@ -87,7 +87,7 @@ const arr = [
     new TrueAndFalse("Command line interfaces are considered efficient, precise, and fast",true),
     new Choices("A draft version of a design before the final version exists (Choose the best choice)","Alternative design ","Evaluation","Draft design ","Prototype "),
     new TrueAndFalse("Change the design on-the-fly is a key characteristic of high-fidelity prototype",false),
-    new TrueAndFalse("Low-fidelity prototype is commonly used as marketing and sales tool ",true),
+    new TrueAndFalse("Low-fidelity prototype is commonly used as marketing and sales tool ",false),
     new TrueAndFalse("The user-centered approaches take the user's feedback at the beginning of the design process only",false),
     new Choices("OFE is an online online contribution technique and stands for","Online Forum Exchange","Open Forum Exchange","Order For Engagement","Online Feedback Exchange"),
     new Choices("What is the primary focus of design thinking?","Budget constraints","Budget-focused thinking ","Technical specifications","Understanding users and redefining problems"),
