@@ -16,25 +16,28 @@
 </style>
 <body>
     <script>
+             let qnum = 0;
             for(let i = arr;i< i < arr.length;i++){
+                qnum++;
                 const random = arr.splice(Math.floor(Math.random() * (arr.length)),1);
                 const name = random[0].constructor.name;
                 document.write("<form class='container mt-5' >");
-                    document.write(`<textarea class="form-control" rows="4" cols="50" id="${i}"  readonly>${random[0].q}</textarea><br>`);
+                    document.write(`<textarea class="form-control" rows="4" cols="50" id="${qnum}"  readonly>${qnum}-${random[0].q}</textarea><br>`);
                     document.write(`<h2></h2>`);
                 if(name != "TrueAndFalse"){
                     const ansr = [random[0].c1,random[0].c2,random[0].c3,random[0].c4];
                     for(let i = ansr;i<i<ansr.length;i++){
                         const ranAnsr = ansr.splice(Math.floor(Math.random() * (ansr.length)),1);
                         if(name == "Selection"){
-                            document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
-                            <label class="form-check-label">${ranAnsr}</label><br>`);
+                                document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="checkbox" name="tf" value="${ranAnsr == random[0].c4 || ranAnsr == random[0].c3 ? "T" : "F"}">
+                                <label class="form-check-label">${ranAnsr}</label><br>`);
                         }else{
                             document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${ranAnsr == random[0].c4 ? "T" : "F"}">
                             <label class="form-check-label">${ranAnsr}</label><br>`);
                         } 
                     }
-                }else{
+                }
+                else{
                     document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${random[0].c ? "T" : "F"}">
                     <label class="form-check-label"> True </label><br>`);
                     document.write(`<input  class="form-check-input" id="radio"  style="color:red;" type="radio" name="tf" value="${random[0].c ? "F" : "T"}">
@@ -43,7 +46,7 @@
                 document.write("</form><br>");
             };
     </script>
-                <div class="fixed-top">
+                <div class="fixed-top rounded-0">
                     <button id="btn" class="btn btn-secondary w-100">حفظ</button>
                 </div>
         <script>
@@ -52,14 +55,41 @@
                  btn.onclick = ()=>{
                     var hr = {green:[],red:[]};
                     for(let f of form){
-                        const q = f.getElementsByTagName("textarea")[0].value;
+                        const q = f.getElementsByTagName("textarea")[0];
                         const radio = f.getElementsByTagName("input");
                         const h2 = f.getElementsByTagName("h2")[0];                        
                         for(let r of radio){
                         if(r.checked){
-                                // if(r.type == "checkbox") console.log(f.nodeType)
-                                
-                                 if(r.value == "T" ){
+                            if(r.type == "checkbox"){
+                               
+                               if(r.value == "T" && r.parentElement == q.parentElement){
+                                   let elmCheckBoxes = r.parentElement.getElementsByTagName("input");
+                                   let elmTrue = [];
+                                   let elmFalse = [];
+                                   for(let e of elmCheckBoxes){
+                                        if(e.value == "T" && e.checked) elmTrue.push(e);
+                                        else elmFalse.push(e);
+                                   }
+                                //    console.log(typeof elmTrue.length)
+                                  for(let e of elmFalse){
+                                    if(elmTrue.length == 2&& !e.checked){
+                                        h2.textContent = "اجابة صحيحة";
+                                        h2.style.color = "green"
+                                        hr.green.push(h2);
+                                   }else{
+                                    h2.textContent = "اجابة خاطئة";
+                                    h2.style.color = "red";
+                                    hr.red.push(h2);
+                                     
+                                   }
+                                  }
+                               }else{
+                                    h2.textContent = "اجابة خاطئة";
+                                    h2.style.color = "red";
+                                    hr.red.push(h2);
+                               }  
+                            }else{
+                                if(r.value == "T" ){
                                     h2.textContent = "اجابة صحيحة";
                                     h2.style.color = "green"
                                     hr.green.push(h2);
@@ -68,8 +98,8 @@
                                     h2.style.color = "red";
                                     hr.red.push(h2);
                                 }    
-                        }
-                  
+                            }      
+                        } 
                     }
                     
                     }
