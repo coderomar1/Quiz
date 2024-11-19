@@ -90,7 +90,7 @@ const arr = [
     new TrueAndFalse("Low-fidelity prototype is commonly used as marketing and sales tool ",true),
     new TrueAndFalse("The user-centered approaches take the user's feedback at the beginning of the design process only",false),
     new Choices("OFE is an online online contribution technique and stands for","Online Forum Exchange","Open Forum Exchange","Order For Engagement","Online Feedback Exchange"),
-    new Choices("What is the primary focus of design thinking?","Budget constraints","Understanding users and redefining problems","Budget-focused thinking ","Technical specifications"),
+    new Choices("What is the primary focus of design thinking?","Budget constraints","Budget-focused thinking ","Technical specifications","Understanding users and redefining problems"),
     new TrueAndFalse("Ideation in design thinking involves generating as few ideas as possible to maintain focus.",false),
     new TrueAndFalse("Involving users in the design process minimizes change resistance and rejection",true)
 ];
