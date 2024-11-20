@@ -79,7 +79,6 @@ const arr = [
     new TrueAndFalse("The evaluation channel is located between the task and solution space.",false),
     new Choices("The fidelity of the prototype, meaning its level of detail: low-fidelity or high-fidelity. What aspect (quality) are we describing?","Interactivity ","Representation ","Evolution ","Precision "),
     new TrueAndFalse("Command line interfaces were invented to overcome the physical constraints of a computer display",false),
-    new TrueAndFalse("A high-fidelity prototypes do not look very much like the final product, nor do they provide the same functionality",false),
     new TrueAndFalse("Low-fidelity prototype tend to be simple, cheap, and quick to produce",true),
     new TrueAndFalse("proof of concept is the final outcome of the design process",false),
     new TrueAndFalse("Commands are assumed to be easier to learn and remember than icons",false),
@@ -91,7 +90,6 @@ const arr = [
     new TrueAndFalse("The user-centered approaches take the user's feedback at the beginning of the design process only",false),
     new Choices("OFE is an online online contribution technique and stands for","Online Forum Exchange","Open Forum Exchange","Order For Engagement","Online Feedback Exchange"),
     new Choices("What is the primary focus of design thinking?","Budget constraints","Budget-focused thinking ","Technical specifications","Understanding users and redefining problems"),
-    new TrueAndFalse("Ideation in design thinking involves generating as few ideas as possible to maintain focus.",false),
     new TrueAndFalse("Involving users in the design process minimizes change resistance and rejection",true)
 ];
 
