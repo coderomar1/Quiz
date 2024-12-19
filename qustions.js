@@ -77,7 +77,6 @@ new Selection("Choose the two statement that are TRUE about an Interactive Repor
 new Selection("Which two of the following type can an end user save the customized Interactive report as"/*<-- Q */,"Cannot save the report","Default report","A private report","A public report"),
 new Selection("Choose the two options provided in a Column Heading menu of an Interactive Report"/*<-- Q */,"group by","Delete","Hide","Control Break"),
 new Selection("Which two statements are TRUE about charts in Interactive grid?"/*<-- Q */,"you can create multiple charts at a time in an interactive grid","Once the chart is created, it cannot be reconfigured","To remove a chart, click the Remove Chart icon(X) adjacent to the chart filter","Once a chart is created, you can switch the view between Grid and Chart view"),
-new Selection(""),
 ];
 
 
