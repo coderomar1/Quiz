@@ -58,6 +58,26 @@ new Selection("Which two statements are true about creating and using an interac
 new Selection(" In a Classic report, an end user can perform which two of the following actions? "/*<-- Q */,"Create Control Breaks in the report ","Rearrange the columns in the report ","Filter values of a column in the report ","Sort the columns of the report "),
 new Selection(" Which two are true about Oracle APEX? "/*<-- Q */,"Performs the data processing in a middle-tier server "," Requires developers to be proficient in Java, Python and other programming language. "," Is declarative. It requires no code generation "," Requires no additional e=client software. A web browser is the app development IDE "),
 new Selection("From SQL Workshop, you can perform which two of the following actions? "/*<-- Q */,"Create an APEX user ","Delete database ","Create and view database objects","Run SQL commands and scripts "),
+
+// q 2
+new Choices("Which statement is true about creating and using a faceted search page"/*<-- Q */,"If you create a faceted search page on a view or a SQL query, the facets are auto discovered","If you create a faceted search page based on a table, the facets are not auto discovered","The search results region can be displayed as an interactive report","The search result regio can be displayed as a classic report or cards"),
+new Choices("Which of the following options in the Developer Toolbar enable you to customize the look and feel of theapplication?","Quick Edit","session","Debug","Customize"),
+new Choices("Plug-ins can be used declaratively in which of the following components in APEX"/*<-- Q */,"Dynamic Actions","Regions","Process Type","All of them"),
+new Choices("you use the Create Page Wizard to create a faceted search page on the EMP table. \n What is the default report type generated for this page"/*<-- Q */,"Interactive Report","Column Toggle Report","Interactive Grid","Classic Report"),
+new Choices("In faceted search page, facets can be displayed as different UI type. \n which two facet item types are supported in the faceted search region"/*<-- Q */,"Data Picker","Popup LOV","Range","Checkbox Group"),
+new Choices("Which of the following methods is best for securing data in an Oracle APEX application"/*<-- Q */,"Using a custom encryption algorithm","Storing data in Plain text format","Storing data in a separate database with restricted access","Using oracle APEX built-in encryption functions"),
+new Choices("There is a validation of type Item that is numeric on the P1_SALARY item. When the page is submitted, this or message is displayed both in the notification and below the item: \n  What will cause the validation error to appear only in the Notification area?"/*<-- Q */,"Removing P1_SALARY from the validation Associated Item","Setting Display Location to Inline in Notification","Change the P1_SALARY item Type","Setting the value Required to Yea on P1_SALARY"),
+// selection
+new Selection("which two types of pages behave similarly in functionality"/*<-- Q */,"Map","Cards","Faceted search","Smart Filter"),
+new Selection("Choose the two statement that are True about the Universal Them in APEX"/*<-- Q */,"NOT designed to work on tables","The developers must have extensive knowledge about JavaScript, CSS, and HTML in order to use the Universal Theme","Responsive UI","Easy customization"),
+new Selection("Which two Plugin type can be created in Oracle APEX"/*<-- Q */,"Validation","Email Template","Region","Process"),
+new Selection("Which are two valid evaluation points for Authorization Schemes?","Never","once per user","Once per session","Once per page view"),
+new Selection("you added Access Control feature pages to your application Which two actions can you perform as an Administrator using the Administration page"/*<-- Q */,"Create Authorization schemes","create new application roles","Add users","Assign roles to users"),
+new Selection("Choose the two statement that are TRUE about an Interactive Report. As a developer:"/*<-- Q */,"You can customize the actions menu to include or exclude certain options","you cannot modify the report source query","You can modify the data in the report and after running the app","you can customize the pagination"),
+new Selection("Which two of the following type can an end user save the customized Interactive report as"/*<-- Q */,"Cannot save the report","Default report","A private report","A public report"),
+new Selection("Choose the two options provided in a Column Heading menu of an Interactive Report"/*<-- Q */,"group by","Delete","Hide","Control Break"),
+new Selection("Which two statements are TRUE about charts in Interactive grid?"/*<-- Q */,"you can create multiple charts at a time in an interactive grid","Once the chart is created, it cannot be reconfigured","To remove a chart, click the Remove Chart icon(X) adjacent to the chart filter","Once a chart is created, you can switch the view between Grid and Chart view"),
+new Selection(""),
 ];
 
 
