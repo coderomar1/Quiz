@@ -65,10 +65,10 @@ new Choices("Which statement is true about creating and using a faceted search p
 new Choices("Which of the following options in the Developer Toolbar enable you to customize the look and feel of theapplication?","Quick Edit","session","Debug","Customize"),
 new Choices("Plug-ins can be used declaratively in which of the following components in APEX"/*<-- Q */,"Dynamic Actions","Regions","Process Type","All of them"),
 new Choices("you use the Create Page Wizard to create a faceted search page on the EMP table. \n What is the default report type generated for this page"/*<-- Q */,"Interactive Report","Column Toggle Report","Interactive Grid","Classic Report"),
-new Choices("In faceted search page, facets can be displayed as different UI type. \n which two facet item types are supported in the faceted search region"/*<-- Q */,"Data Picker","Popup LOV","Range","Checkbox Group"),
 new Choices("Which of the following methods is best for securing data in an Oracle APEX application"/*<-- Q */,"Using a custom encryption algorithm","Storing data in Plain text format","Storing data in a separate database with restricted access","Using oracle APEX built-in encryption functions"),
 new Choices("There is a validation of type Item that is numeric on the P1_SALARY item. When the page is submitted, this or message is displayed both in the notification and below the item: \n  What will cause the validation error to appear only in the Notification area?"/*<-- Q */,"Removing P1_SALARY from the validation Associated Item","Setting Display Location to Inline in Notification","Change the P1_SALARY item Type","Setting the value Required to Yea on P1_SALARY"),
 // selection
+new Selection(2,"In faceted search page, facets can be displayed as different UI type. \n which two facet item types are supported in the faceted search region"/*<-- Q */,"Data Picker","Popup LOV","Range","Checkbox Group"),
 new Selection(2,"which two types of pages behave similarly in functionality"/*<-- Q */,"Map","Cards","Faceted search","Smart Filter"),
 new Selection(2,"Choose the two statement that are True about the Universal Them in APEX"/*<-- Q */,"NOT designed to work on tables","The developers must have extensive knowledge about JavaScript, CSS, and HTML in order to use the Universal Theme","Responsive UI","Easy customization"),
 new Selection(2,"Which two Plugin type can be created in Oracle APEX"/*<-- Q */,"Validation","Email Template","Region","Process"),
@@ -91,6 +91,7 @@ new Selection(3,"In Apex, you can choose which three of the following Authentica
 new Selection(3,"Which three of the following options are True about a page in an APEX application"/*<-- Q */,"An APEX application can have only one page","A page can contain button, page items and regions","To view the rendered version of the page, you run or submit it to the Orcel APEX engine","A page can be viewed and edited in the Page Designer"),
 new Selection(3,"Choose the three different ways in which you can add a checkbox to a page"/*<-- Q */,"Add a checkbox from the Property Editor","Drag and drop the checkbox item into the layout pane","Right click Body in the Rendering Tree and add a new page item as checkbox Type","Use the context sensitive menu in the Gallery Pane"),
 new Selection(3,"Which three of the following statements are TRUE about saved Public Interactive Grid?"/*<-- Q */,"Any user may save public interactive grids","Public reports are available to all users","To enable an end user to save a public interactive grid, the user must have the required permission","Only the user who creates a public interactive gride can save, rename, or delete it"),
+
 ];
 
 
