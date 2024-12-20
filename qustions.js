@@ -79,6 +79,7 @@ new Selection(2,"Which two of the following type can an end user save the custom
 new Selection(2,"Choose the two options provided in a Column Heading menu of an Interactive Report"/*<-- Q */,"group by","Delete","Hide","Control Break"),
 new Selection(2,"Which two statements are TRUE about charts in Interactive grid?"/*<-- Q */,"you can create multiple charts at a time in an interactive grid","Once the chart is created, it cannot be reconfigured","To remove a chart, click the Remove Chart icon(X) adjacent to the chart filter","Once a chart is created, you can switch the view between Grid and Chart view"),
 // three ans
+new Selection(3,"Which three are the main components of APEX workspace homepage?"/*<-- Q */,"RESTful Services","Gallery","SQL Workshop","App Builder"),
 new Selection(3,"What are three key features of Universal Theme?"/*<-- Q */,"Support for single theme","versatile UI components","responsive Design","easy customization"),
 new Selection(3,"Can you create a report in which of the three following methods?"/*<-- Q */,"create a report from Object Browser","create a report as a new page in an application","create a report when you create a new database application","create a report region on a page in an application"),
 new Selection(3,"What three are the building blocks of Approval Components"/*<-- Q */,"Automations","Task Details Page","Task Definition","Unified Task List"),
