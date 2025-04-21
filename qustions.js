@@ -41,7 +41,7 @@ new Choices("Which component allows us to specify the distance between widgets o
 new Choices("Which of the following is used to load images from the flutter project’s assets?","Image","Image.file","Image.memory","Image.asset"),
 new TrueAndFalse("Flutter supports desktop application development.",true),
 new Choices("What type of Flutter animation allows you to represent real-world behavior?","Maths-based","Graph-based","Sim-based","Physics-based"),
-new Selection("Which widget type allows you to modify its appearance dynamically according to user input?","Stateless widget","State widget","widget","Stateful widget"),
+new Choices("Which widget type allows you to modify its appearance dynamically according to user input?","Stateless widget","Statebuild widget","All of the abovet","Stateful widget"),
 new TrueAndFalse("an experienced Flutter developer doesn't need to know platform native languages or tools to build apps.",false),
 new Choices("What are the type of tests, that we can perform in flutter?","Unit test","Widget test","Integration test","All of the above"),
 new Choices("A sequence of asynchronous Flutter events is known as a:","Flow","Current","Series","Stream"),
@@ -51,7 +51,6 @@ new TrueAndFalse("Flutter boasts improved runtime performance over most applicat
 new Choices("How many types of widgets are there in Flutter?","4","6","8+","2"),
 new Choices("Choose the best editors for Flutter app development.","VS Code","Sublime Text","Android Studio","All of the above"),
 new Choices("What is the key configuration file used when building a Flutter project?","pubspec.xml","config.html","root.xml","pubspec.yaml"),
-new TrueAndFalse("A sequence of asynchronous events is often referred to as a stream",true),
 new Choices("The most important properties of the Image widget are","width, double","height, double","image, ImageProvider","all of the above"),
 new TrueAndFalse("Flutter teams are inherently more difficult to manage because the framework is so new",false),
 new Choices("What command would you run to verify your Flutter install and ensure your environment is set up correctly?","Flutter run","Flutter build","Flutter help","Flutter doctor"),
@@ -78,7 +77,6 @@ new TrueAndFalse("Java language is used to build Flutter applications.",false),
 new TrueAndFalse("A sequence of asynchronous events is often referred to as a stream.",true),
 new TrueAndFalse("SafeArea component allows us to specify the distance between widgets on the screen",false),
 new TrueAndFalse("Does flutter support desktop application development?",true),
-new TrueAndFalse("Flutter is not a language, it is a SDK",true),
 new TrueAndFalse("runApp() function is responsible for starting the program.",false),
 new TrueAndFalse("When you build the flutter app the first time, does it will take a longer time.",true),
 new TrueAndFalse("Flutter is close and open-source.",false),
@@ -95,7 +93,6 @@ new TrueAndFalse("pubspec.ymal file contains project language.",false),
 new TrueAndFalse("Flutter is not language,it is a SDK",true),
 new TrueAndFalse("Cross-platform Development is the advantages of Flutter.",true),
 new TrueAndFalse("The examples of the statefull widget are(Text,Row,Column).",false),
-new TrueAndFalse("An experienced Fluttter developer doesn't need to know platform native languages or tools to build apps",false)
 ];
 
 
