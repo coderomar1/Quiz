@@ -54,7 +54,24 @@ const arr = [
     new TrueAndFalse("We don’t need to the staff in system and software maintenance.",true),
     new TrueAndFalse("Most cloud applications have amounted the level of traditional desktop applications.",false),
     new TrueAndFalse("Better performance, because can I get all file from any PC, smart phone etc.",true),
-    new TrueAndFalse("less maintenance costs.",true)
+    new TrueAndFalse("less maintenance costs.",true),
+    // last 10 
+    new TrueAndFalse("Data stored in the cloud can only be accessed from a single device",false),
+    new TrueAndFalse("In cloud computing, you only pay for the resources you use",true),
+    new TrueAndFalse("Data stored in a cloud cannot be lost or corrupted",false),
+    new TrueAndFalse("The three main types of cloud computing services .are laas, Paas, and Saas",true),
+    new TrueAndFalse("Hybrid cloud combines both public and private cloud models",true),
+    new TrueAndFalse("Data stored in the cloud is completely immune to cyberattacks",false),
+    new TrueAndFalse("Using cloud services makes businesses less flexible and more dependent on physical infrastructure",false),
+    new TrueAndFalse("Public clouds are always more expensive than private clouds",false),
+    new TrueAndFalse("Scalability is one of the main advantages of cloud computing",true),
+    new TrueAndFalse("Once you upload data to the cloud, you cannot retrieve or download it again",false),
+    // mid 2
+    new TrueAndFalse("Only companies benefit from cloud services",false),
+    new TrueAndFalse("The benefits of cloud services you don't have to deal with local storage for example maintain it",false),
+    new TrueAndFalse("If you get file corruption the cloud services provider is responsible for it and they provide backup",true),
+    new TrueAndFalse("All cloud services are completely free",false),
+
 ];
 
 
