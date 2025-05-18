@@ -93,6 +93,11 @@ new TrueAndFalse("pubspec.ymal file contains project language.",false),
 new TrueAndFalse("Flutter is not language,it is a SDK",true),
 new TrueAndFalse("Cross-platform Development is the advantages of Flutter.",true),
 new TrueAndFalse("The examples of the statefull widget are(Text,Row,Column).",false),
+new TrueAndFalse("Localization is the process of adapting an application to support single languages.",false),
+new TrueAndFalse("Localization allows your app to be more accessible to users from different parts of the world.",true),
+new TrueAndFalse("You have to add Flutter Launcher Icons configuration to your pubspec.yaml.",true),
+new TrueAndFalse("After setting up the configuration to your pubspec.yaml, you should run the package (dart pub get)",false),
+new TrueAndFalse("Is it true the flutter using JPG bitmap format in Splash Screen ",false),
 ];
 
 
